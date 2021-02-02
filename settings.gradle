@@ -1,0 +1,2 @@
+include ':ViewSlideDemo'
+rootProject.name = "ViewProject"
