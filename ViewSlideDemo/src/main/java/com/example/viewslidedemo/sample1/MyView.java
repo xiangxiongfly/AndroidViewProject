@@ -2,8 +2,10 @@ package com.example.viewslidedemo.sample1;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Scroller;
 
 import androidx.annotation.Nullable;
@@ -12,6 +14,9 @@ public class MyView extends View {
     private int lastX;
     private int lastY;
     private Scroller mScroller;
+    private int maxRight;
+    private ViewGroup parent;
+    private int maxBottom;
 
     public MyView(Context context) {
         this(context, null);
@@ -34,13 +39,38 @@ public class MyView extends View {
             case MotionEvent.ACTION_DOWN:
                 lastX = x;
                 lastY = y;
+                parent = (ViewGroup) getParent();
+                maxRight = parent.getRight();
+                maxBottom = parent.getBottom();
                 break;
             case MotionEvent.ACTION_MOVE:
                 int offsetX = x - lastX;
                 int offsetY = y - lastY;
 
                 //移动方式一
-                layout(getLeft() + offsetX, getTop() + offsetY, getRight() + offsetX, getBottom() + offsetY);
+                int left = getLeft() + offsetX;
+                int top = getTop() + offsetY;
+                int right = getRight() + offsetX;
+                int bottom = getBottom() + offsetY;
+                if (left < 0) {
+                    right -= left;
+                    left = 0;
+                }
+                if (right > maxRight) {
+                    left -= right - maxRight;
+                    right = maxRight;
+                }
+                if (top < 0) {
+                    bottom -= top;
+                    top = 0;
+                }
+                if (bottom > maxBottom) {
+                    top -= bottom - maxBottom;
+                    bottom = maxBottom;
+                }
+                Log.e("TAG", "top: " + top);
+                Log.e("TAG", "bottom: " + bottom);
+                layout(left, top, right, bottom);
 
                 //移动方式二
 //                offsetLeftAndRight(offsetX);
