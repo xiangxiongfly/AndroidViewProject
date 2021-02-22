@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.example.app.TitleBar
+        android:id="@+id/tilebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="自定义View"
+        app:title_bg="@color/teal_200"
+        app:title_text_color="@color/black" />
+
+    <Button
+        android:text="自定义ViewGroup"
+        android:textAllCaps="false"
+        android:onClick="startViewGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.example.app.InvalidTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="hellow"
+        android:textSize="32sp" />
+
+    <com.example.app.RectView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:padding="10dp" />
+
+    <com.example.app.RectView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:padding="10dp"
+        app:rect_color="@color/black" />
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#00ff00"
+        android:padding="50dp" />
+</LinearLayout>
