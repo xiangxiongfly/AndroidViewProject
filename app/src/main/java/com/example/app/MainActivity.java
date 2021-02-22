@@ -1,7 +1,6 @@
 package com.example.app;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -46,11 +45,6 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
     }
-
-    public void startViewGroup(View v) {
-        startActivity(new Intent(context, MyViewGroupActivity.class));
-    }
-
     @Override
     protected void onStart() {
         super.onStart();

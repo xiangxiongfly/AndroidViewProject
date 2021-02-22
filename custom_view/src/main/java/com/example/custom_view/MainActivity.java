@@ -1,4 +1,4 @@
-package com.example.app;
+package com.example.custom_view;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
@@ -6,16 +6,15 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MyViewGroupActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
-    private ListView listView2;
     private ListView listView1;
+    private ListView listView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_view_group);
-
+        setContentView(R.layout.activity_main);
 
         listView1 = (ListView) this.findViewById(R.id.listView1);
         listView2 = (ListView) this.findViewById(R.id.listView2);
