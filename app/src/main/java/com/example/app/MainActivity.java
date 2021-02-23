@@ -2,6 +2,7 @@ package com.example.app;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
@@ -57,13 +58,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-//        Log.e("TAG", "Activity dispatchTouchEvent:" + Utils.getEvent(ev));
+        Log.e("TAG", "Activity dispatchTouchEvent:" + Utils.getEvent(ev));
         return super.dispatchTouchEvent(ev);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-//        Log.e("TAG", "Activity onTouchEvent:" + Utils.getEvent(event));
+        Log.e("TAG", "Activity onTouchEvent:" + Utils.getEvent(event));
         return super.onTouchEvent(event);
     }
 }

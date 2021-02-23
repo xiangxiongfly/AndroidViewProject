@@ -1,3 +1,4 @@
+include ':attr_demo'
 include ':custom_view'
 include ':app'
 include ':ViewSlideDemo'

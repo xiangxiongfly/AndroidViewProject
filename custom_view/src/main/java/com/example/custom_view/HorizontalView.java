@@ -2,7 +2,6 @@ package com.example.custom_view;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
@@ -122,7 +121,6 @@ public class HorizontalView extends ViewGroup {
 
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.e("TAG", "down");
                 //如果动画还没有执行完，则中断
                 if (!mScroller.isFinished()) {
                     mScroller.abortAnimation();

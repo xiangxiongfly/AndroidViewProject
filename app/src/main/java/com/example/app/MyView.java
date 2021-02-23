@@ -4,11 +4,10 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
-import android.view.View;
 
 import androidx.annotation.Nullable;
 
-public class MyView extends View {
+public class MyView extends androidx.appcompat.widget.AppCompatTextView {
     public MyView(Context context) {
         super(context);
     }
@@ -19,15 +18,6 @@ public class MyView extends View {
 
     public MyView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-
-        post(new Runnable() {
-            @Override
-            public void run() {
-                Log.e("TAG","hello");
-            }
-        });
-
-
     }
 
     @Override

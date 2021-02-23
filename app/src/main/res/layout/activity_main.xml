@@ -42,5 +42,19 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="#00ff00"
-        android:padding="50dp" />
+        android:padding="50dp"
+        android:visibility="gone" />
+
+    <com.example.app.MyViewGroup
+        android:background="#ff0000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.app.MyView
+            android:text="afdasdfasdfasdf"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#0000ff" />
+    </com.example.app.MyViewGroup>
 </LinearLayout>

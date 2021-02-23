@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.attr_demo.AttrView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/customView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="30dp"
+        android:background="#123123"
+        app:custom_boolean="true"
+        app:custom_color="#ff0000"
+        app:custom_dimension="50.5dp"
+        app:custom_enum="right"
+        app:custom_flags="english|chinese"
+        app:custom_float="1.66"
+        app:custom_fraction="6%"
+        app:custom_integer="666"
+        app:custom_resid="@drawable/ic_right"
+        app:custom_string="@string/app_name" />
+</FrameLayout>

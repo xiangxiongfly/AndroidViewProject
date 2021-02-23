@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AttrView">
+        <attr name="custom_color" format="color" />
+        <attr name="custom_string" format="string" />
+        <attr name="custom_dimension" format="dimension" />
+        <attr name="custom_boolean" format="boolean" />
+        <attr name="custom_integer" format="integer" />
+        <attr name="custom_float" format="float" />
+        <attr name="custom_fraction" format="fraction" />
+        <attr name="custom_resid" format="reference" />
+        <attr name="custom_enum" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="custom_flags" format="flags">
+            <flag name="none" value="0" />
+            <flag name="english" value="2" />
+            <flag name="chinese" value="4" />
+        </attr>
+    </declare-styleable>
+</resources>
