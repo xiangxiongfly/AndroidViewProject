@@ -40,8 +40,10 @@ public class MyView extends View {
                 lastX = x;
                 lastY = y;
                 parent = (ViewGroup) getParent();
-                maxRight = parent.getRight();
-                maxBottom = parent.getBottom();
+//                maxRight = parent.getRight();
+//                maxBottom = parent.getBottom();
+                maxRight = parent.getMeasuredWidth();
+                maxBottom = parent.getMeasuredHeight();
                 break;
             case MotionEvent.ACTION_MOVE:
                 int offsetX = x - lastX;

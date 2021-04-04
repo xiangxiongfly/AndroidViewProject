@@ -7,22 +7,16 @@
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
-    <com.example.app.TitleBar
-        android:id="@+id/tilebar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:title="自定义View"
-        app:title_bg="@color/teal_200"
-        app:title_text_color="@color/black" />
-
-    <com.example.app.InvalidTextView
+    <FrameLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/holo_green_dark"
-        android:gravity="center"
-        android:padding="10dp"
-        android:text="hellow"
-        android:textSize="32sp" />
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="aasdfasdfasdfasdfbcv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000" />
+    </FrameLayout>
 
     <com.example.app.RectView
         android:layout_width="wrap_content"
@@ -46,15 +40,15 @@
         android:visibility="gone" />
 
     <com.example.app.MyViewGroup
-        android:background="#ff0000"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#ff0000"
         android:orientation="vertical">
 
         <com.example.app.MyView
-            android:text="afdasdfasdfasdf"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:background="#0000ff" />
+            android:background="#0000ff"
+            android:text="afdasdfasdfasdf" />
     </com.example.app.MyViewGroup>
 </LinearLayout>

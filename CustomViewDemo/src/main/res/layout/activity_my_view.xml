@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#12000000"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".pkg1.MyViewActivity">
+
+        <com.example.custom_view.pkg1.InvalidTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/holo_green_dark"
+            android:text="hello"
+            android:textSize="32sp" />
+
+        <com.example.custom_view.pkg1.InvalidTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/holo_green_dark"
+            android:padding="10dp"
+            android:text="hello"
+            android:textSize="32sp"
+            app:line_color="#000000"
+            app:line_width="1dp" />
+
+        <com.example.custom_view.pkg1.CircleTextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:text="hello"
+            android:textSize="32sp" />
+
+        <com.example.custom_view.pkg1.CircleTextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="hello"
+            android:textSize="32sp"
+            app:border_color="#00ff00"
+            app:border_width="5dp"
+            app:circle_color="#123123" />
+
+        <com.example.custom_view.pkg1.CircleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <com.example.custom_view.pkg1.CircleView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:background="#000"
+            android:padding="10dp" />
+
+    </LinearLayout>
+</ScrollView>

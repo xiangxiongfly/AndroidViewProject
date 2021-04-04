@@ -12,10 +12,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AttrDemo" />
+            <option value="$PROJECT_DIR$/CustomViewDemo" />
+            <option value="$PROJECT_DIR$/TouchDemo" />
             <option value="$PROJECT_DIR$/ViewSlideDemo" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/attr_demo" />
-            <option value="$PROJECT_DIR$/custom_view" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

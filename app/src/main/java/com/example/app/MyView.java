@@ -1,13 +1,14 @@
 package com.example.app;
 
 import android.content.Context;
+import android.graphics.Canvas;
 import android.util.AttributeSet;
-import android.util.Log;
-import android.view.MotionEvent;
+import android.view.View;
 
 import androidx.annotation.Nullable;
 
-public class MyView extends androidx.appcompat.widget.AppCompatTextView {
+public class MyView extends View {
+
     public MyView(Context context) {
         super(context);
     }
@@ -21,14 +22,14 @@ public class MyView extends androidx.appcompat.widget.AppCompatTextView {
     }
 
     @Override
-    public boolean dispatchTouchEvent(MotionEvent event) {
-        Log.e("TAG", "View dispatchTouchEvent:" + Utils.getEvent(event));
-        return super.dispatchTouchEvent(event);
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+//        getMeasuredWidth()
+        getWidth();
     }
 
     @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        Log.e("TAG", "View onTouchEvent:" + Utils.getEvent(event));
-        return super.onTouchEvent(event);
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
     }
 }

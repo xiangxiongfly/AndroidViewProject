@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="circle_color" format="color" />
+
+    <declare-styleable name="InvalidTextView">
+        <attr name="line_width" format="dimension" />
+        <attr name="line_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleTextView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="circle_color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleView">
+        <attr name="circle_color" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleBar">
+        <attr name="title_text_color" format="color" />
+        <attr name="title_bg" format="color" />
+        <attr name="title" format="string" />
+    </declare-styleable>
+
+</resources>

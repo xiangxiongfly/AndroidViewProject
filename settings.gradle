@@ -1,5 +1,5 @@
-include ':attr_demo'
-include ':custom_view'
-include ':app'
+include ':TouchDemo'
+include ':AttrDemo'
+include ':CustomViewDemo'
 include ':ViewSlideDemo'
 rootProject.name = "ViewProject"
