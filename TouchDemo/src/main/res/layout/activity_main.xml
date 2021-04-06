@@ -8,16 +8,20 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btn1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ScrollView+ViewPager: 外部拦截法" />
+        android:onClick="click1"
+        android:text="ViewPager嵌套ViewPager" />
 
     <Button
-        android:id="@+id/btn2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ScrollView+ViewPager: 内部拦截法" />
+        android:onClick="click2"
+        android:text="ScrollView嵌套ListView" />
 
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="click3"
+        android:text="ScrollView嵌套EditText" />
 </LinearLayout>

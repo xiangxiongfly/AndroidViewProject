@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ViewProject">
+        <activity android:name=".pkg3.ThreeActivity"></activity>
+        <activity android:name=".pkg2.TwoActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,12 +19,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view01.SvVp1Activity"
-            android:label="ScrollView+ViewPager 外部拦截法" />
-        <activity
-            android:name=".view02.SvVp2Activity"
-            android:label="ScrollView+ViewPager 内部拦截法"></activity>
-
+            android:name=".pkg1.OneActivity"
+            android:label="ViewPager嵌套ViewPager" />
     </application>
 
 </manifest>

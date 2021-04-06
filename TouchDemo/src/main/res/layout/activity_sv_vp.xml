@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".view01.SvVp1Activity">
 
-    <com.example.vieweventdemo.view01.MyScrollView
+    <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -16,16 +16,23 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="ViewPager" />
+            <!--            <androidx.viewpager.widget.ViewPager-->
+            <!--                android:id="@+id/viewPager"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="200dp" />-->
 
-            <androidx.viewpager.widget.ViewPager
-                android:id="@+id/viewPager"
-                android:layout_width="match_parent"
-                android:layout_height="200dp" />
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:background="#ff00ff00">
+
+                <TextView
+                    android:layout_width="8000dp"
+                    android:layout_height="match_parent"
+                    android:background="#66111111"
+                    android:text="水平ScrollView水平ScrollView水平ScrollView水平ScrollView水平ScrollView水平ScrollView水平ScrollView水平ScrollView水平ScrollView水平ScrollView水平ScrollView水平ScrollView..." />
+
+            </HorizontalScrollView>
 
             <TextView
                 android:layout_width="match_parent"
@@ -34,6 +41,6 @@
                 android:gravity="center_horizontal"
                 android:text="测速数据\n测速数据\n测速数据\n测速数据\n测速数据\n..." />
         </LinearLayout>
-    </com.example.vieweventdemo.view01.MyScrollView>
+    </ScrollView>
 
 </FrameLayout>
