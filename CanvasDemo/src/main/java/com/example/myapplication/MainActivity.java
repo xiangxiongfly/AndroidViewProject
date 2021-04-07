@@ -33,17 +33,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initData() {
-//        pageModels.add(new PageModel("drawColor()", DrawColorView.class));
-//        pageModels.add(new PageModel("drawCircle()", DrawCircleView.class));
-//        pageModels.add(new PageModel("drawRect()", DrawRectView.class));
-//        pageModels.add(new PageModel("drawRoundRect()", DrawRoundRectView.class));
-//        pageModels.add(new PageModel("drawPoint()", DrawPointView.class));
-//        pageModels.add(new PageModel("drawPoints()", DrawPointsView.class));
-//        pageModels.add(new PageModel("drawOval()", DrawOvalView.class));
-//        pageModels.add(new PageModel("drawLine()", DrawLineView.class));
-//        pageModels.add(new PageModel("drawLines()", DrawLinesView.class));
-//        pageModels.add(new PageModel("drawArc()", DrawArcView.class));
-//        pageModels.add(new PageModel("drawBitmap()", DrawBitmapView.class));
+        pageModels.add(new PageModel("drawColor()", DrawColorView.class));
+        pageModels.add(new PageModel("drawCircle()", DrawCircleView.class));
+        pageModels.add(new PageModel("drawRect()", DrawRectView.class));
+        pageModels.add(new PageModel("drawRoundRect()", DrawRoundRectView.class));
+        pageModels.add(new PageModel("drawPoint()", DrawPointView.class));
+        pageModels.add(new PageModel("drawPoints()", DrawPointsView.class));
+        pageModels.add(new PageModel("drawOval()", DrawOvalView.class));
+        pageModels.add(new PageModel("drawLine()", DrawLineView.class));
+        pageModels.add(new PageModel("drawLines()", DrawLinesView.class));
+        pageModels.add(new PageModel("drawArc()", DrawArcView.class));
+        pageModels.add(new PageModel("drawBitmap()", DrawBitmapView.class));
         pageModels.add(new PageModel("drawText()", DrawTextView.class));
 
     }
