@@ -13,6 +13,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/AttrDemo" />
+            <option value="$PROJECT_DIR$/CanvasDemo" />
             <option value="$PROJECT_DIR$/CustomViewDemo" />
             <option value="$PROJECT_DIR$/TouchDemo" />
             <option value="$PROJECT_DIR$/ViewSlideDemo" />

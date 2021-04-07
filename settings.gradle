@@ -1,3 +1,4 @@
+include ':CanvasDemo'
 include ':TouchDemo'
 include ':AttrDemo'
 include ':CustomViewDemo'
