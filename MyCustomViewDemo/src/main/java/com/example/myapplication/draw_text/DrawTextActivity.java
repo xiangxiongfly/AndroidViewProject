@@ -1,4 +1,4 @@
-package com.example.myapplication.path;
+package com.example.myapplication.draw_text;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -16,7 +16,7 @@ import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 
-public class PathActivity extends AppCompatActivity {
+public class DrawTextActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private TabLayout tabLayout;
 
@@ -34,10 +34,10 @@ public class PathActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        pageModels.add(new PageModel("绘制心行", HeartView.class));
-        pageModels.add(new PageModel("画圆形", CircleView.class));
-        pageModels.add(new PageModel("画线", LineView.class));
-        pageModels.add(new PageModel("闭合效果", CloseView.class));
+        pageModels.add(new PageModel("绘制文字", DrawTextView.class));
+        pageModels.add(new PageModel("沿着Path绘制文字", DrawTextOnPathView.class));
+        pageModels.add(new PageModel("其他", OtherView.class));
+        pageModels.add(new PageModel("文字居中", CenterTextView.class));
     }
 
     private void initViews() {

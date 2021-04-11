@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myapplication.canvas.CanvasActivity;
 import com.example.myapplication.paint.PaintActivity;
+import com.example.myapplication.path.PathActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,11 +18,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
     }
 
-    public void clickCanvas(View view){
+    public void clickCanvas(View view) {
         startActivity(new Intent(MainActivity.this, CanvasActivity.class));
     }
 
-    public void clickPaint(View view){
+    public void clickPaint(View view) {
         startActivity(new Intent(MainActivity.this, PaintActivity.class));
+    }
+
+    public void clickPath(View view) {
+        startActivity(new Intent(MainActivity.this, PathActivity.class));
     }
 }
