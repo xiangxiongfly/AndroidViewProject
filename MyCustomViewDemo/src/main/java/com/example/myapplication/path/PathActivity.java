@@ -34,7 +34,7 @@ public class PathActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        pageModels.add(new PageModel("绘制心行", HeartView.class));
+        pageModels.add(new PageModel("绘制心形", HeartView.class));
         pageModels.add(new PageModel("画圆形", CircleView.class));
         pageModels.add(new PageModel("画线", LineView.class));
         pageModels.add(new PageModel("闭合效果", CloseView.class));

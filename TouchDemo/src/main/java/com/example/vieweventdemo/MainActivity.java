@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.vieweventdemo.pkg1.OneActivity;
 import com.example.vieweventdemo.pkg2.TwoActivity;
 import com.example.vieweventdemo.pkg3.ThreeActivity;
+import com.example.vieweventdemo.pkg4.NestedActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,5 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void click3(View view) {
         startActivity(new Intent(context, ThreeActivity.class));
+    }
+
+    public void click4(View view) {
+        startActivity(new Intent(context, NestedActivity.class));
     }
 }
