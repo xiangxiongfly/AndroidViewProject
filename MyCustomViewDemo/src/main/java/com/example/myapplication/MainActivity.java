@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myapplication.canvas.CanvasActivity;
+import com.example.myapplication.draw_text.DrawTextActivity;
 import com.example.myapplication.paint.PaintActivity;
 import com.example.myapplication.path.PathActivity;
 
@@ -28,5 +29,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickPath(View view) {
         startActivity(new Intent(MainActivity.this, PathActivity.class));
+    }
+
+    public void clickDrawText(View view) {
+        startActivity(new Intent(MainActivity.this, DrawTextActivity.class));
     }
 }

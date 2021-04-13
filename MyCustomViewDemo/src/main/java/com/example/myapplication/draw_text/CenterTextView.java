@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -41,9 +42,16 @@ public class CenterTextView extends View {
         //绘制文字并居中
         paint.setStyle(Paint.Style.FILL);
         paint.setTextSize(30);
-        Paint.FontMetrics fontMetrics = new Paint.FontMetrics();
-        paint.getFontMetrics(fontMetrics);
-        canvas.drawText("100%", getWidth() / 2F, getHeight() / 2F - (fontMetrics.ascent + fontMetrics.descent) / 2, paint);
+        String text = "100%";
 
+        //方式一：适合静态文字
+        Rect bounds = new Rect();
+        paint.getTextBounds(text, 0, text.length(), bounds);
+        canvas.drawText(text, getWidth() / 2, getHeight() / 2 - (bounds.top + bounds.bottom) / 2, paint);
+
+        //方式二：适合动态文字
+//        Paint.FontMetrics fontMetrics = new Paint.FontMetrics();
+//        paint.getFontMetrics(fontMetrics);
+//        canvas.drawText(text, getWidth() / 2F, getHeight() / 2F - (fontMetrics.ascent + fontMetrics.descent) / 2, paint);
     }
 }

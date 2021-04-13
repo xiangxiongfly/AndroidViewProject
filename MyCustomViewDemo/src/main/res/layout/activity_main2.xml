@@ -25,4 +25,10 @@
         android:onClick="clickPath"
         android:text="Path" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickDrawText"
+        android:text="文字绘制" />
+
 </LinearLayout>
