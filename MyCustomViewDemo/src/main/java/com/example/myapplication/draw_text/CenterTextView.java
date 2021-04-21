@@ -47,11 +47,11 @@ public class CenterTextView extends View {
         //方式一：适合静态文字
         Rect bounds = new Rect();
         paint.getTextBounds(text, 0, text.length(), bounds);
-        canvas.drawText(text, getWidth() / 2, getHeight() / 2 - (bounds.top + bounds.bottom) / 2, paint);
+        canvas.drawText(text, getWidth() / 2, getHeight() / 2 - (bounds.bottom + bounds.top) / 2, paint);
 
         //方式二：适合动态文字
 //        Paint.FontMetrics fontMetrics = new Paint.FontMetrics();
 //        paint.getFontMetrics(fontMetrics);
-//        canvas.drawText(text, getWidth() / 2F, getHeight() / 2F - (fontMetrics.ascent + fontMetrics.descent) / 2, paint);
+//        canvas.drawText(text, getWidth() / 2F, getHeight() / 2F - (fontMetrics.descent + fontMetrics.ascent) / 2, paint);
     }
 }

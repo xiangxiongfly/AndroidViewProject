@@ -2,7 +2,6 @@ package com.example.viewslidedemo.sample1;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,8 +39,6 @@ public class MyView extends View {
                 lastX = x;
                 lastY = y;
                 parent = (ViewGroup) getParent();
-//                maxRight = parent.getRight();
-//                maxBottom = parent.getBottom();
                 maxRight = parent.getMeasuredWidth();
                 maxBottom = parent.getMeasuredHeight();
                 break;
@@ -70,8 +67,6 @@ public class MyView extends View {
                     top -= bottom - maxBottom;
                     bottom = maxBottom;
                 }
-                Log.e("TAG", "top: " + top);
-                Log.e("TAG", "bottom: " + bottom);
                 layout(left, top, right, bottom);
 
                 //移动方式二
