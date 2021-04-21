@@ -192,4 +192,9 @@ public class HorizontalView extends ViewGroup {
         mScroller.startScroll(getScrollX(), getScrollY(), destX - getScrollX(), destY - getScrollY(), 1000);
         invalidate();
     }
+
+    @Override
+    public boolean shouldDelayChildPressedState() {
+        return true;
+    }
 }
