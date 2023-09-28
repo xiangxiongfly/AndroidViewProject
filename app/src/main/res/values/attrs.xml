@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <declare-styleable name="MyAttrsView">
+        <attr name="custom_color" format="color" />
+        <attr name="custom_string" format="string" />
+        <attr name="custom_dimension" format="dimension" />
+        <attr name="custom_boolean" format="boolean" />
+        <attr name="custom_integer" format="integer" />
+        <attr name="custom_float" format="float" />
+        <attr name="custom_fraction" format="fraction" />
+        <attr name="custom_fraction2" format="fraction" />
+        <attr name="custom_enum" format="enum">
+            <enum name="none" value="-1" />
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="top" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="custom_flags" format="flags">
+            <flag name="english" value="1" />
+            <flag name="chinese" value="2" />
+            <flag name="french" value="4" />
+            <flag name="japanese" value="8" />
+        </attr>
+        <attr name="custom_resid" format="reference" />
+    </declare-styleable>
+
     <declare-styleable name="RectView">
         <attr name="rect_color" format="color" />
     </declare-styleable>

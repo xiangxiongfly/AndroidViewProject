@@ -1,33 +1,27 @@
 package com.example.app;
 
-import android.content.Context;
 import android.os.Bundle;
+import android.view.View;
 
-import androidx.appcompat.app.AppCompatActivity;
+import com.example.app.attrs.MyAttrsActivity;
+import com.example.app.base.BaseActivity;
 
-public class MainActivity extends AppCompatActivity {
-
-    private Context context;
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        context = this;
-//        TitleBar tilebar = findViewById(R.id.tilebar);
-//        tilebar.setOnLeftListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(context, "左边", Toast.LENGTH_SHORT).show();
-//            }
-//        });
-//        tilebar.setOnRightListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(context, "右边", Toast.LENGTH_SHORT).show();
-//            }
-//        });
 
+
+    }
+
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.btn_attrs:
+                MyAttrsActivity.actionStart(context);
+                break;
+        }
 
     }
 }

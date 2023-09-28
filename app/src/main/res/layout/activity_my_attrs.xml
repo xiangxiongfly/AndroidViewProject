@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".attrs.MyAttrsActivity">
+
+    <com.example.app.attrs.MyAttrsView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="#ff0000"
+        app:custom_boolean="true"
+        app:custom_color="#ff0000"
+        app:custom_dimension="80.3dp"
+        app:custom_enum="top"
+        app:custom_flags="english|french"
+        app:custom_float="1.5"
+        app:custom_fraction="60%"
+        app:custom_fraction2="60%p"
+        app:custom_integer="65"
+        app:custom_resid="@drawable/ic_right"
+        app:custom_string="小明" />
+
+</FrameLayout>

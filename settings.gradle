@@ -1,6 +1,6 @@
 include ':MyCustomViewDemo'
 include ':TouchDemo'
-include ':AttrDemo'
 include ':CustomViewDemo'
 include ':ViewSlideDemo'
-rootProject.name = "ViewProject"
+include ':app'
+rootProject.name = "AndroidViewProject"

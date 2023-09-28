@@ -7,16 +7,12 @@
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:text="aasdfasdfasdfasdfbcv"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#000" />
-    </FrameLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:id="@+id/btn_attrs"
+        android:text="自定义属性" />
 
     <com.example.app.RectView
         android:layout_width="wrap_content"
@@ -30,25 +26,4 @@
         android:layout_marginTop="100dp"
         android:padding="10dp"
         app:rect_color="@color/black" />
-
-    <FrameLayout
-        android:id="@+id/fl"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="#00ff00"
-        android:padding="50dp"
-        android:visibility="gone" />
-
-    <com.example.app.MyViewGroup
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#ff0000"
-        android:orientation="vertical">
-
-        <com.example.app.MyView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="#0000ff"
-            android:text="afdasdfasdfasdf" />
-    </com.example.app.MyViewGroup>
 </LinearLayout>
